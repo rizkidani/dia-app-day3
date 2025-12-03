@@ -1,1 +1,13 @@
-<p>login works!</p>
+<ul>
+    <li *ngFor="let u of users">
+        {{ u.id }} - {{ u.username }} - {{ u.email }}
+    </li>
+</ul>
+
+<button (click)="save()">POST USER</button>
+<button (click)="updatePut(id)">PUT USER</button>
+<button (click)="deleteUser(id)">DELETE USER</button>
+
+<hr>
+<p>LOGIN</p>
+<button (click)="login()">LOGIN</button>
